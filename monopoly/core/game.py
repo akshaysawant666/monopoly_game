@@ -311,7 +311,7 @@ class Game(object):
     # this will return a 40 num array, each indicate the owner of each land
     def get_land_owners(self):
         ret = []
-        for i in xrange(self._board.get_grid_num()):
+        for i in range(self._board.get_grid_num()):
             land = self._board.get_land(i)
             owner = land.get_content().get_owner_index()
             ret.append(owner)

@@ -61,6 +61,9 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'webapps.urls'
 
+LOGIN_URL = '/monopoly/login'
+LOGIN_REDIRECT_URL = '/monopoly/'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -128,6 +131,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+
 
 config = ConfigParser()
 config.read(os.path.join(BASE_DIR, 'config.ini'))
