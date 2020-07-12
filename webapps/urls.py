@@ -25,4 +25,5 @@ from django.conf import settings
 urlpatterns = [
     url(r'^monopoly/', include('monopoly.urls')),
     url(r'^admin/', admin.site.urls),
+    url(r'^blockchain/', include('blockchain.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

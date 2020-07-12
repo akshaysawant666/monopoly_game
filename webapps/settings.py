@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '!1fxp5y6ul2wl_*szvgd6x8u8hgopuj)b5+#vt%#bq7g$^507n'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -39,7 +39,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'channels',
-    'monopoly'
+    'monopoly',
+    'blockchain',
+    'cryptography',
+    'rest_framework',
+    'bpython',
 ]
 
 CHANNEL_LAYERS = {
@@ -131,7 +135,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
-
+#STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 config = ConfigParser()
 config.read(os.path.join(BASE_DIR, 'config.ini'))
