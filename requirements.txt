@@ -23,7 +23,7 @@ bpython==0.19
 certifi==2020.4.5.1
 chardet==3.0.4
 curtsies==0.3.1
-djangorestframework==3.11.0
+djangorestframework==3.11.2
 Faker==4.0.3
 greenlet==0.4.15
 Pygments==2.6.1
