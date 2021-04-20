@@ -1,6 +1,6 @@
 asgiref==1.1.2
 attrs==19.3.0
-autobahn==20.4.3
+autobahn==20.12.3
 Automat==20.2.0
 cffi==1.12.2
 configparser==3.5.0
