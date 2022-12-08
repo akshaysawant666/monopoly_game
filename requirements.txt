@@ -20,7 +20,7 @@ zope.interface==5.1.0
 asn1crypto==0.24.0
 blessings==1.6.1
 bpython==0.19
-certifi==2020.4.5.1
+certifi==2022.12.7
 chardet==3.0.4
 curtsies==0.3.1
 djangorestframework==3.11.0
